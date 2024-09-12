@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/2305.w026.n002.3617B.p1.3617.jpg'); /* Replace with your image path or URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%); */
+        /* background-color: #063977; */
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    
+}
+.img{
+    width: 150px; 
+    height: auto; 
+    margin: 10px 0; 
+}
+
+.h{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #e6e6ff;
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8),   /* Darker purple */
+                 0 0 20px rgba(128, 0, 128, 0.6),   /* Darker purple */
+                 0 0 30px rgba(128, 0, 128, 0.4),   /* Darker purple */
+                 0 0 40px #7d3c98,                  /* Medium purple */
+                 0 0 70px #7d3c98,                  /* Medium purple */
+                 0 0 80px #7d3c98,                  /* Medium purple */
+                 0 0 100px #7d3c98;                 /* Medium purple */
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    color: #e6e6ff; /* Light purple text color */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8),   /* Darker purple */
+                 0 0 20px rgba(128, 0, 128, 0.6),   /* Darker purple */
+                 0 0 30px rgba(128, 0, 128, 0.4),   /* Darker purple */
+                 0 0 40px #7d3c98,                  /* Medium purple */
+                 0 0 70px #7d3c98,                  /* Medium purple */
+                 0 0 80px #7d3c98,                  /* Medium purple */
+                 0 0 100px #7d3c98;                 /* Medium purple */
+}
+
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    background-color: #D7C3F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+.tile.revealed {
+    background-color: #5a2d81;
+    cursor: default;
+}
+
+.tile.mine {
+    background-color: #FF4C4C;
+}
+
+
+.tile.diamond {
+    background-color: #06D001;
+    color: #fff;
+}
+
+#reset-button, #start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #5bc0de;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#reset-button:hover, #start-button:hover {
+    background-color: #31b0d5;
+}

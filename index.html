@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>mines</title>
+  <link rel="stylesheet" href="link.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading1"class="heading">MINES </h1>
+    <img class="img" src="C:\Users\lohan\.vscode\mines\images\round-black-bomb-realistic-style.png" alt="" id="bomb-image">
+    <h1 id="heading2" class="heading">BET BIG EARN BIG</h1>
+    <div id="game-container">
+      <label class="h" for="mine-count">Enter number of mines: </label>
+      <input type="number" id="mine-count" min="1" max="24" value="5">
+      <button id="start-button">Start Game</button>
+      <div id="grid"></div>
+  </div>
+  <button id="reset-button">Reset Game</button>
+  <audio id="click-sound" src="audio/rocks-and-gravel-slide-1-204994.mp3"></audio>
+  <audio id="explosion-sound" src="audio/heavy-cineamtic-hit-166888.mp3"></audio>
+    <script src="index.js"></script>  
+</body>
+</html>
